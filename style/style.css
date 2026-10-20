@@ -1,4 +1,4 @@
-/* SUNNY SOCKS stylesheet*/
+/* SUNNY SOCKS STYLESHEET */
 
 :root {
   /* Fonts */
@@ -16,18 +16,4 @@
   --sunny-blue:   #2AAEDB;  
   --cream:        #FFFBEF;   
   --cream-dark:   #F5EFD6;   
-}
-
-
-body {
-  font-family: var(--font-body);
-  color: var(--navy);
-  background: var(--cream);
-}
-
-h1, h2, h3, h4 {
-  font-family: var(--font-display);
-  font-weight: 700;
-  color: var(--navy);
-  line-height: 1.2;
 }
