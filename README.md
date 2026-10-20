@@ -27,9 +27,9 @@ Important project documents:
 
 ---
 
-## 👥 Team — Group 1B
+## 👥 Team Group 1B
 
 - Hunain Mukhtar
-- Rachel
-- Noah
-- Lakshay
+- Rachel van Russel
+- Noah Zilius
+- Lakshay Juneja
