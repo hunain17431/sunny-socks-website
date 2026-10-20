@@ -1,0 +1,33 @@
+/* SUNNY SOCKS stylesheet*/
+
+:root {
+  /* Fonts */
+  --font-display: "Montserrat", sans-serif;
+  --font-body:    "Inter", sans-serif;   
+
+  /* Brand colours */
+  --navy:         #1B2D6B;   
+  --navy-dark:    #0F1F56; 
+  --yellow:       #FFCC00;   
+  --yellow-hover: #F0BE00; 
+  --teal:         #00B4C0;   
+  --pink:         #F06292;   
+  --coral:        #FF7A5C;   
+  --sunny-blue:   #2AAEDB;  
+  --cream:        #FFFBEF;   
+  --cream-dark:   #F5EFD6;   
+}
+
+
+body {
+  font-family: var(--font-body);
+  color: var(--navy);
+  background: var(--cream);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2;
+}
