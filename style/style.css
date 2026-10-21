@@ -133,7 +133,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: .3s;
+}
 
+.collections-product-image img:hover {
+  transform: scale(1.1);
 }
 
 .collections-product-body {
@@ -142,7 +146,7 @@ body {
   border-radius: 16px;
 }
 
-.tags {
+.collections-tags {
   color: var(--gray);
   list-style: none;
   display: flex;
@@ -151,7 +155,7 @@ body {
   padding: 0;
 }
 
-.tags li {
+.collections-tags li {
   padding: 4px 12px;
   background: var(--cream);
   border-radius: 9999px;
