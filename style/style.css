@@ -84,6 +84,7 @@ body {
   display: flex;
   gap: 12px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .collections-filter-button {
@@ -104,4 +105,106 @@ body {
 .collections-filter-button.is-active {
   background-color: var(--yellow);
   border-color: var(--yellow);
+}
+
+.collections-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.collections-product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 20px;
+  border: 2px solid var(--yellow);
+  border-radius: 25px;
+  background: var(--white);
+}
+
+.collections-product-image {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--cream-dark);
+  border-radius: 16px;
+}
+
+.collections-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.collections-product-body {
+  flex: 1; 
+  padding: 0 10px;
+  border-radius: 16px;
+}
+
+.tags {
+  color: var(--gray);
+  list-style: none;
+  display: flex;
+  gap: 4px;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.tags li {
+  padding: 4px 12px;
+  background: var(--cream);
+  border-radius: 9999px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.collections-product-body h2 {
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.collections-product-body p {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.collections-product-action {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 0 8px;
+}
+
+
+.collections-btn-yellow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  background: var(--yellow);
+  color: var(--navy);
+}
+
+.collections-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  border-color: var(--gray);
+  color: var(--navy);
 }
