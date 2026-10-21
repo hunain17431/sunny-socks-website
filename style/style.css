@@ -80,13 +80,13 @@ body {
   color: var(--gray);
 }
 
-.filter {
+.collections-filter {
   display: flex;
   gap: 12px;
   margin-top: 20px;
 }
 
-.filter-button {
+.collections-filter-button {
   border: 1px solid var(--gray);
   border-radius: 9999px;
   font-family: var(--font-display);
@@ -97,11 +97,11 @@ body {
   background-color: var(--white);
 }
 
-.filter-button:hover {
+.collections-filter-button:hover {
   border-color: var(--yellow);
 }
 
-.filter-button.is-active {
+.collections-filter-button.is-active {
   background-color: var(--yellow);
   border-color: var(--yellow);
 }
