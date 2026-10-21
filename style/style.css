@@ -16,7 +16,8 @@
   --sunny-blue:   #2AAEDB;  
   --cream:        #FFFBEF;   
   --cream-dark:   #F5EFD6;
-  --gray:         #788198; 
+  --gray:         #788198;
+  --white:        #ffffff;
 }
 
 body {
@@ -77,4 +78,30 @@ body {
   margin-bottom: 16px;
   font-size: 12px;
   color: var(--gray);
+}
+
+.filter {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.filter-button {
+  border: 1px solid var(--gray);
+  border-radius: 9999px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--navy);
+  padding: 8px 15px;
+  background-color: var(--white);
+}
+
+.filter-button:hover {
+  border-color: var(--yellow);
+}
+
+.filter-button.is-active {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
 }
