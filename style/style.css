@@ -120,6 +120,12 @@ body {
   border: 2px solid var(--yellow);
   border-radius: 25px;
   background: var(--white);
+  transition: .3s;
+}
+
+.collections-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 5px var(--gray);
 }
 
 .collections-product-image {
