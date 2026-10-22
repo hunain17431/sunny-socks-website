@@ -55,7 +55,7 @@ body {
 
 .collections-banner h1 {
   font-family: var(--font-display);
-  font-size: 3.75rem;
+  font-size: 60px;
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
@@ -224,4 +224,56 @@ body {
 
 .collections-btn-yellow:hover {
   background: var(--yellow-hover);
+}
+
+.collections-about-us {
+  background-color: var(--navy);
+  margin-top: 30px;
+}
+
+.collections-container-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.collections-about-us h2 {
+  font-family: var(--font-display);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.collections-about-us p {
+  font-family: var(--font-body);
+  color: var(--gray);
+  max-width: 45%;
+  text-align: center;
+  font-size:  14px;
+}
+
+.collections-about-buttons {
+  display: flex;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.collections-btn-inquiry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 1px solid var(--white);
+  border-radius: 12px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  background: var(--navy);
+  color: var(--white);
 }
