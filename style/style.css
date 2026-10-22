@@ -366,17 +366,23 @@ body {
   background: var(--gray);
 }
 /* Classic Everyday */
-.everyday-banner {
-  margin: 0 auto;
-  border-bottom: 1px solid var(--cream-dark); 
-}
-
 .everyday-container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 32px;
 }
-
+ 
+.everyday-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+ 
+ 
+.everyday-banner {
+  border-bottom: 1px solid var(--cream-dark);
+}
+ 
 .everyday-trail {
   display: flex;
   gap: 8px;
@@ -384,45 +390,64 @@ body {
   font-size: 14px;
   color: var(--gray);
 }
-
-.everyday-link { 
-  color: inherit; 
-  text-decoration: none; 
+ 
+.everyday-link {
+  color: inherit;
+  text-decoration: none;
 }
-
-.everyday-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
+ 
+ 
 .everyday-image {
-  margin-top: 40px;
   max-width: 580px;
-  
+  margin-top: 40px;
 }
-
+ 
+.everyday-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
 .everyday-image-main {
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 24px;
 }
-
-.everyday-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
+ 
+.everyday-image-preview-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
 }
-
+ 
+.everyday-image-preview {
+  max-width: 80px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 16px;
+}
+ 
+ 
+.everyday-info h1 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+ 
+.everyday-desc {
+  color: var(--gray);
+}
+ 
 .everyday-tags {
-  margin-top: 40px;
-  color: var(--navy);
-  list-style: none;
   display: flex;
   gap: 4px;
+  margin-top: 40px;
   padding: 0;
+  list-style: none;
+  color: var(--navy);
 }
-
+ 
 .everyday-tags li {
   padding: 4px 12px;
   background: var(--yellow);
@@ -431,112 +456,133 @@ body {
   font-size: 12px;
   font-weight: 600;
 }
+ 
 
+.everyday-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+ 
+ 
+.everyday-size-btns {
+  margin-top: 10px;
+}
+ 
 .everyday-size-btn {
   padding: 10px 20px;
   border: 2px solid var(--gray);
   border-radius: 8px;
+  background: var(--cream);
   font-family: var(--font-display);
   font-size: 14px;
   font-weight: 700;
-  background: var(--cream);
   color: var(--navy);
-  transition: .1s;
+  transition: 0.1s;
 }
-
+ 
+ 
 .everyday-material {
   margin: 30px 0;
-  padding: 10px;
+  padding: 15px;
   background-color: var(--cream-dark);
   border-radius: 12px;
 }
 
 .everyday-material span {
+  color: var(--gray);
   font-size: 12px;
-  color: var(--gray);
   text-transform: uppercase;
+  letter-spacing: 1px;
   font-weight: 700;
-  letter-spacing: 1px;
 }
-
+ 
 .everyday-material p {
-  font-size: 14px;
-  color: var(--gray);
   margin-bottom: 10px;
+  font-size: 14px;
   letter-spacing: 1px;
+  color: var(--gray);
 }
-
+ 
+ 
 .everyday-inquiry-btns {
   display: flex;
   gap: 12px;
 }
-
-.everyday-size-btns {
-  margin-top: 10px;
-}
-
-.everyday-inquiry-btn {
-  flex: 1;
-  padding: 20px 24px;
-  border: 1px solid var(--white);
-  border-radius: 12px;
-  font-family: var(--font-display);
-  font-size: 14px;
-  font-weight: 700;
-  background: var(--navy);
-  color: var(--white);
-  transition: .1s;
-}
-
+ 
+.everyday-inquiry-btn,
 .everyday-inquiry-btn-outline {
   flex: 1;
   padding: 20px 24px;
-  border: 2px solid var(--navy);
   border-radius: 12px;
   font-family: var(--font-display);
   font-size: 14px;
   font-weight: 700;
-  color: var(--navy);
+  transition: 0.1s;
+}
+ 
+.everyday-inquiry-btn {
+  border: 1px solid var(--white);
+  background: var(--navy);
+  color: var(--white);
+}
+ 
+.everyday-inquiry-btn-outline {
+  border: 2px solid var(--navy);
   background-color: var(--cream);
-  transition: .1s;
+  color: var(--navy);
 }
-
-.everyday-image-preview-container {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.everyday-image-preview {
-  max-width: 80px;
-  aspect-ratio: 1;
-  overflow: hidden;
-  border-radius: 16px;
-}
-
-.everyday-container h1 {
-  font-family: var(--font-display);
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: 900;
-}
-
-.everyday-size {
-  font-size: 12px;
-  color: var(--gray);
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-}
-
-.everyday-desc {
-  color: var(--gray);
-}
-
+ 
 .everyday-disclaimer {
   font-size: 12px;
   text-align: center;
   color: var(--gray);
+}
+ 
+ 
+.everyday-custom-order {
+  background-color: var(--teal);
+}
+ 
+.everyday-custom-order .everyday-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 40px;
+
+}
+ 
+.everyday-custom-order h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: -10px;
+}
+
+.everyday-custom-order p {
+  color: var(--white);
+  font-size: 14px;
+}
+ 
+.everyday-custom-order .everyday-inquiry-btn {
+  flex: 0 0 auto;
+}
+
+.everyday-custom-inquiry-btn {
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.1s;
+  border: 1px solid transparent;
+  background: var(--yellow);
+  color: var(--navy);
 }
 
