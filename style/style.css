@@ -365,7 +365,7 @@ body {
 .collections-btn-inquiry:hover {
   background: var(--gray);
 }
-/* Classic Everyday */
+/* Classic Everyday and Nordic Knit */
 .everyday-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -553,7 +553,6 @@ body {
   justify-content: space-between;
   padding: 20px;
   margin-top: 40px;
-
 }
  
 .everyday-custom-order h3 {
@@ -584,5 +583,18 @@ body {
   border: 1px solid transparent;
   background: var(--yellow);
   color: var(--navy);
+}
+
+.everyday-ymal {
+  background-color: var(--cream-dark);
+  padding: 48px 0 64px;
+}
+
+.everyday-ymal-title {
+  margin: 0 0 32px;
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
