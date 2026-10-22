@@ -186,7 +186,7 @@ body {
   border-color: var(--navy-dark);
 }
 
-.collections-filter-button.is-active {
+.collections-filter-button.active {
   background-color: var(--yellow);
   border-color: var(--yellow);
 }
@@ -425,6 +425,15 @@ body {
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: 16px;
+  border: 2px transparent;
+}
+
+.everyday-image-preview.active{
+  border: 2px solid var(--navy-dark);
+}
+
+.everyday-image-preview:hover {
+  border: 2px dotted var(--navy-dark);
 }
  
  
@@ -456,18 +465,7 @@ body {
   font-size: 12px;
   font-weight: 600;
 }
- 
 
-.everyday-label {
-  display: block;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--gray);
-}
- 
- 
 .everyday-size-btns {
   margin-top: 10px;
 }
@@ -483,7 +481,10 @@ body {
   color: var(--navy);
   transition: 0.1s;
 }
- 
+
+.everyday-size-btn:hover {
+  border: 2px solid var(--navy);
+}
  
 .everyday-material {
   margin: 30px 0;
@@ -529,6 +530,10 @@ body {
   background: var(--navy);
   color: var(--white);
 }
+
+.everyday-inquiry-btn:hover {
+  background: var(--navy-dark);
+}
  
 .everyday-inquiry-btn-outline {
   border: 2px solid var(--navy);
@@ -536,6 +541,11 @@ body {
   color: var(--navy);
 }
  
+.everyday-inquiry-btn-outline:hover {
+  background-color: var(--navy-dark);
+  color: var(--white);
+}
+
 .everyday-disclaimer {
   font-size: 12px;
   text-align: center;
@@ -568,10 +578,6 @@ body {
   color: var(--white);
   font-size: 14px;
 }
- 
-.everyday-custom-order .everyday-inquiry-btn {
-  flex: 0 0 auto;
-}
 
 .everyday-custom-inquiry-btn {
   padding: 15px 30px;
@@ -583,6 +589,10 @@ body {
   border: 1px solid transparent;
   background: var(--yellow);
   color: var(--navy);
+}
+
+.everyday-custom-inquiry-btn:hover {
+  background-color: var(--yellow-hover);
 }
 
 .everyday-ymal {
