@@ -265,9 +265,6 @@ body {
 }
 
 .collections-btn-inquiry {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   padding: 12px 24px;
   border: 1px solid var(--white);
   border-radius: 12px;
@@ -276,4 +273,8 @@ body {
   font-weight: 700;
   background: var(--navy);
   color: var(--white);
+}
+
+.collections-btn-inquiry:hover {
+  background: var(--gray);
 }
