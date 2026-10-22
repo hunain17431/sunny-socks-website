@@ -282,3 +282,23 @@ body {
 .collections-btn-inquiry:hover {
   background: var(--gray);
 }
+
+.everyday-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.everyday-trail {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: var(--gray);
+  border-bottom: 1px solid var(--cream-dark); 
+}
+
+.everyday-link { 
+  color: inherit; 
+  text-decoration: none; 
+}
