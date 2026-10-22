@@ -88,18 +88,19 @@ body {
 }
 
 .collections-filter-button {
-  border: 1px solid var(--gray);
+  border: 2px solid var(--gray);
   border-radius: 9999px;
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--navy);
   padding: 8px 15px;
   background-color: var(--white);
+  transition: .1s;
 }
 
 .collections-filter-button:hover {
-  border-color: var(--yellow);
+  border-color: var(--navy-dark);
 }
 
 .collections-filter-button.is-active {
@@ -203,6 +204,7 @@ body {
   font-weight: 700;
   background: var(--yellow);
   color: var(--navy);
+  transition: .1s;
 }
 
 .collections-btn-outline {
@@ -216,6 +218,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   color: var(--navy);
+  transition: .1s;
 }
 
 .collections-btn-outline:hover {
@@ -273,6 +276,7 @@ body {
   font-weight: 700;
   background: var(--navy);
   color: var(--white);
+  transition: .1s;
 }
 
 .collections-btn-inquiry:hover {
