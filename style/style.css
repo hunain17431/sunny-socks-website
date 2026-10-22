@@ -398,22 +398,25 @@ body {
 .everyday-image {
   margin-top: 40px;
   max-width: 580px;
+  
 }
 
 .everyday-image-main {
   aspect-ratio: 1;
   overflow: hidden;
+  border-radius: 24px;
 }
 
 .everyday-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
 }
 
 .everyday-tags {
   margin-top: 40px;
-  color: var(--gray);
+  color: var(--navy);
   list-style: none;
   display: flex;
   gap: 4px;
@@ -422,7 +425,7 @@ body {
 
 .everyday-tags li {
   padding: 4px 12px;
-  background: var(--cream);
+  background: var(--yellow);
   border-radius: 9999px;
   font-family: var(--font-display);
   font-size: 12px;
@@ -430,7 +433,51 @@ body {
 }
 
 .everyday-size-btn {
-  padding: 12px 24px;
+  padding: 10px 20px;
+  border: 2px solid var(--gray);
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  background: var(--cream);
+  color: var(--navy);
+  transition: .1s;
+}
+
+.everyday-material {
+  margin: 30px 0;
+  padding: 10px;
+  background-color: var(--cream-dark);
+  border-radius: 12px;
+}
+
+.everyday-material span {
+  font-size: 12px;
+  color: var(--gray);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.everyday-material p {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.everyday-inquiry-btns {
+  display: flex;
+  gap: 12px;
+}
+
+.everyday-size-btns {
+  margin-top: 10px;
+}
+
+.everyday-inquiry-btn {
+  flex: 1;
+  padding: 20px 24px;
   border: 1px solid var(--white);
   border-radius: 12px;
   font-family: var(--font-display);
@@ -441,25 +488,16 @@ body {
   transition: .1s;
 }
 
-.everyday-material {
-  background-color: var(--cream-dark);
-}
-
-.everyday-inquiry-btns {
-  display: flex;
-  gap: 12px;
-}
-
-.everyday-inquiry-btn {
+.everyday-inquiry-btn-outline {
   flex: 1;
-  padding: 12px 24px;
-  border: 1px solid var(--white);
+  padding: 20px 24px;
+  border: 2px solid var(--navy);
   border-radius: 12px;
   font-family: var(--font-display);
   font-size: 14px;
   font-weight: 700;
-  background: var(--navy);
-  color: var(--white);
+  color: var(--navy);
+  background-color: var(--cream);
   transition: .1s;
 }
 
@@ -470,9 +508,35 @@ body {
 }
 
 .everyday-image-preview {
-  max-width: 100px;
+  max-width: 80px;
   aspect-ratio: 1;
   overflow: hidden;
+  border-radius: 16px;
 }
 
+.everyday-container h1 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.everyday-size {
+  font-size: 12px;
+  color: var(--gray);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.everyday-desc {
+  color: var(--gray);
+}
+
+.everyday-disclaimer {
+  font-size: 12px;
+  text-align: center;
+  color: var(--gray);
+}
 
