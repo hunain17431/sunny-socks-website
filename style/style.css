@@ -732,3 +732,295 @@ body {
   font-size: 16px;
   font-weight: 700;
 }
+
+/* =========================
+   SPORT PRO PRODUCT PAGE
+   ========================= */
+
+.sport-pro-page {
+  min-height: 100vh;
+  background-color: #fffcef;
+  color: #1b2d6b;
+  font-family: Arial, sans-serif;
+}
+
+.sport-pro-page .product-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 42px 28px 64px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 38px;
+}
+
+.sport-pro-page .product-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.sport-pro-page .product-info {
+  min-width: 0;
+}
+
+.sport-pro-page .product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+.sport-pro-page .product-tags span {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background-color: #ffcc00;
+  color: #1b2d6b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.sport-pro-page .product-info h1 {
+  margin: 0 0 18px;
+  color: #1b2d6b;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.sport-pro-page .description {
+  margin: 0 0 26px;
+  color: #4f5b70;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.sport-pro-page .product-info > h2 {
+  margin: 0 0 14px;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.sport-pro-page .sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.sport-pro-page .sizes button {
+  padding: 11px 18px;
+  border: 2px solid #eee6d0;
+  border-radius: 9px;
+  background: transparent;
+  color: #1b2d6b;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sport-pro-page .sizes button:hover,
+.sport-pro-page .sizes button:focus-visible {
+  border-color: #1b2d6b;
+  background-color: #f5efd6;
+}
+
+.sport-pro-page .material {
+  margin-bottom: 24px;
+  padding: 20px;
+  border-radius: 14px;
+  background-color: #f5efd6;
+}
+
+.sport-pro-page .material h2 {
+  margin: 0 0 8px;
+  color: #1b2d6b;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sport-pro-page .material p {
+  margin: 0;
+  color: #4f5b70;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.sport-pro-page .primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 54px;
+  padding: 14px 22px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #1b2d6b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.sport-pro-page .primary-button:hover {
+  background-color: #0f1f56;
+}
+
+.sport-pro-page .note {
+  margin: 16px 0 0;
+  color: #8a91a0;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.sport-pro-page .site-footer {
+  padding: 36px 28px;
+  background-color: #00b4c0;
+  color: #fff;
+  text-align: center;
+}
+
+.sport-pro-page .site-footer h2 {
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sport-pro-page .site-footer p {
+  margin: 0 0 18px;
+  line-height: 1.6;
+}
+
+.sport-pro-page .site-footer a {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 9px;
+  background-color: #ffcc00;
+  color: #1b2d6b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Mobile layout */
+@media (max-width: 760px) {
+  .sport-pro-page .product-page {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 26px 18px 42px;
+  }
+
+  .sport-pro-page .product-image img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .sport-pro-page .product-info h1 {
+    font-size: 34px;
+  }
+
+  .sport-pro-page .site-footer {
+    padding: 30px 18px;
+  }
+}
+
+/* Sport Pro product page */
+.sport-pro-page {
+  background-color: #fffbeF;
+  color: #1b2d6b;
+  min-height: 100vh;
+}
+
+.sport-pro-page .product-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+.sport-pro-page .product-image {
+  min-width: 0;
+}
+
+.sport-pro-page .product-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.sport-pro-page .product-info {
+  min-width: 0;
+}
+
+.sport-pro-page .product-info h1 {
+  color: #1b2d6b;
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 800;
+  margin: 16px 0;
+}
+
+.sport-pro-page .product-info .description {
+  line-height: 1.7;
+}
+
+.sport-pro-page .sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sport-pro-page .sizes button {
+  padding: 12px 18px;
+  border: 2px solid #f5efd6;
+  border-radius: 10px;
+  background: transparent;
+  color: #1b2d6b;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sport-pro-page .material {
+  margin: 28px 0;
+  padding: 20px;
+  background: #f5efd6;
+  border-radius: 14px;
+}
+
+.sport-pro-page .primary-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  text-align: center;
+  background: #1b2d6b;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .sport-pro-page .product-page {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px 16px;
+  }
+
+  .sport-pro-page .product-image img {
+    max-height: 420px;
+  }
+}
