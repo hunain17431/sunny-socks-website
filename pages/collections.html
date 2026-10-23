@@ -8,12 +8,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style/style.css">
 </head>
-
 <body>
   <nav class="navbar">
-    <div>This will be the header</div>
-  </nav>
-
+        <div class="nav-logo">
+            <img src="images/home/sun-icon.svg" alt="sun icon">
+            <span>SUNNY SOCKS</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/sunny-socks-website/pages/collections.html" class="nav-active">Collections</a></li>
+            <li><a href="/sunny-socks-website/pages/about.html">About us</a></li>
+            <li><a href="/sunny-socks-website/pages/sustainability.html">Sustainability</a></li>
+            <li><a href="/sunny-socks-website/pages/contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">            
+            <div class="nav-lang-toggle">
+                <button class="nav-lang-en">EN</button>
+                <button class="nav-lang-nl">NL</button>
+            </div>
+            <button class="nav-inquiry"><a href="/sunny-socks-website/pages/inquiry.html">Inquiry</a></button>
+        </div>
+    </nav>
   <main>
     <section class="collections-banner">
       <div class="collections-container collections-inner">
@@ -31,7 +46,7 @@
     <section class="collections">
       <div class="collections-container">
         <div class="collections-filter">
-          <button class="collections-filter-button is-active">All</button>
+          <button class="collections-filter-button active">All</button>
           <button class="collections-filter-button">Everyday</button>
           <button class="collections-filter-button">Sport</button>
           <button class="collections-filter-button">Limited</button>
