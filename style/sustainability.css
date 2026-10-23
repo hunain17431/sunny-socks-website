@@ -1,0 +1,27 @@
+:root {
+  /* Fonts */
+  --font-display: "Montserrat", sans-serif;
+  --font-body:    "Inter", sans-serif;   
+
+  /* Brand colours */
+  --navy:         #1B2D6B;   
+  --navy-dark:    #0F1F56;
+  --navy-border: rgba(27, 45, 107, 0.15); 
+  --yellow:       #FFCC00;   
+  --yellow-hover: #F0BE00; 
+  --teal:         #00B4C0;   
+  --pink:         #F06292;   
+  --coral:        #FF7A5C;   
+  --sunny-blue:   #2AAEDB;  
+  --cream:        #FFFBEF;   
+  --cream-dark:   #F5EFD6;
+  --gray:         #788198;
+  --white:        #ffffff;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  background: var(--cream);
+  color: var(--navy);
+}
