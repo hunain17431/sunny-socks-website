@@ -118,7 +118,7 @@ body {
   border: none;
 }
 
-/* Home Section */
+/* Home Hero Section */
 
 .home-hero-section{
   display: flex;
@@ -196,17 +196,6 @@ body {
   border-radius: 12px;
 }
 
-.home-hero-btn-2{
-  background: transparent;
-  border: 2px solid var(--navy);
-  font-weight: 700;
-  font-size: 14px;
-  color: var(--navy);
-  text-decoration: none;
-  padding: 14px 28px;
-  border-radius: 12px;
-}
-
 .home-hero-btn-2:hover{
   background: var(--navy);
   color: var(--white);
@@ -249,6 +238,20 @@ body {
   left: -20px;
   background: var(--yellow);
   color: var(--navy);
+}
+
+/* HOME COLLECTION SECTION */
+
+.home-collection{
+  margin-top: 30px;
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
+.home-collection-label{
+  color: var(--teal);
+  font-weight: 700;
+  font-size: 12px;
 }
 
 /* Collections */
