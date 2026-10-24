@@ -1,0 +1,163 @@
+:root {
+  /* Fonts */
+  --font-display: "Montserrat", sans-serif;
+  --font-body:    "Inter", sans-serif;   
+
+  /* Brand colours */
+  --navy:         #1B2D6B;   
+  --navy-dark:    #0F1F56;
+  --navy-border: rgba(27, 45, 107, 0.15); 
+  --yellow:       #FFCC00;   
+  --yellow-hover: #F0BE00; 
+  --teal:         #00B4C0;   
+  --pink:         #F06292;   
+  --coral:        #FF7A5C;   
+  --sunny-blue:   #2AAEDB;  
+  --cream:        #FFFBEF;   
+  --cream-dark:   #F5EFD6;
+  --gray:         #788198;
+  --white:        #ffffff;
+}
+
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  background: var(--cream);
+  color: var(--navy);
+}
+
+/* Home Hero Section */
+
+.home-hero-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-left {
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
+.hero-right {
+  padding-right: 32px;
+  padding-top: 40px;
+}
+
+
+.home-hero-text {
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--teal);
+  margin-bottom: -40px;
+  
+}
+
+.home-hero-heading {
+  font-size: 72px;
+  font-weight: 1500px;
+  line-height: 1;
+  margin-bottom: 16px;
+  letter-spacing: -3px;
+}
+
+#hero-heading-word{
+  color: var(--yellow);
+}
+
+.home-hero-subtitle{
+  font-family: var(--font-body);
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+}
+
+.home-hero-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px; 
+}
+
+.home-hero-btn-1{
+  font-weight: 700;
+  font-size: 14px;
+  background-color: var(--navy);
+  color: var(--white);
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+}
+
+.home-hero-btn-1:hover{
+  background-color: var(--navy-dark);
+}
+
+.home-hero-btn-2{
+  background: transparent;
+  border: 2px solid var(--navy);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--navy);
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+}
+
+.home-hero-btn-2:hover{
+  background: var(--navy);
+  color: var(--white);
+}
+
+
+.hero-right img{
+  border-radius: 16px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-hero-stat {
+  position: absolute;
+  padding: 16px 20px;
+  border-radius: 16px;
+  font-family: var(--font-display);
+}
+
+.home-hero-stat-number {
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.home-hero-stat-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.home-hero-stat-navy {
+  top: 0;
+  right: 0;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.home-hero-stat-yellow {
+  bottom: 20px;
+  left: -20px;
+  background: var(--yellow);
+  color: var(--navy);
+}
+
+/* HOME COLLECTION SECTION */
+
+.home-collection{
+  margin-top: 30px;
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
+.home-collection-label{
+  color: var(--teal);
+  font-weight: 700;
+  font-size: 12px;
+}
