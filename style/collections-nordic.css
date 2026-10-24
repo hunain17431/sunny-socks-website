@@ -26,7 +26,97 @@ body {
   color: var(--navy);
 }
 
-/* Nordic Knit */
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--navy-border);
+  height: 40px;
+  padding : 16px 32px; 
+}
+
+.nav-logo{
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links li a {
+  font-family: var(--font-display);
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--navy);
+}
+
+.nav-links li a.nav-active {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+}
+
+.nav-inquiry {
+  background-color: var(--navy);
+  color: var(--white);
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.nav-inquiry:hover {
+  background-color: var(--navy-dark);
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.nav-lang-toggle {
+  display: flex;
+  border: 1px solid var(--navy-border);
+  overflow: hidden;
+  border-radius: 100px;
+  padding: 1px;
+}
+
+.nav-lang-en {
+  font-size: 12px;
+  font-weight: 700;
+  width: 35px;
+  background-color: var(--yellow);
+  border-radius: 100px;
+  border: none;
+}
+
+.nav-lang-nl {
+  font-size: 12px;
+  width: 35px;
+  font-weight: 700;
+  border-radius: 100px;
+  color: var(--gray);
+  background-color: var(--white);
+  border: none;
+}
+
+/* Classic Everyday */
 
 .everyday-container {
   max-width: 1280px;
@@ -53,9 +143,9 @@ body {
   color: var(--gray);
 }
  
-.everyday-link {
-  color: inherit;
-  text-decoration: none;
+.collections-link { 
+  color: inherit; 
+  text-decoration: none; 
 }
  
  
@@ -201,6 +291,8 @@ body {
   border: 2px solid var(--navy);
   background-color: var(--cream);
   color: var(--navy);
+  display: flex;
+  justify-content: center;
 }
  
 .everyday-inquiry-btn-outline:hover {
@@ -268,4 +360,132 @@ body {
   font-size: 24px;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.collections-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.collections-product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 20px;
+  border: 2px solid var(--yellow);
+  border-radius: 25px;
+  background: var(--white);
+  transition: .3s;
+}
+
+.collections-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 5px var(--gray);
+}
+
+.collections-product-image {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--cream-dark);
+  border-radius: 16px;
+}
+
+.collections-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s;
+}
+
+.collections-product-image img:hover {
+  transform: scale(1.1);
+}
+
+.collections-product-body {
+  flex: 1; 
+  padding: 0 10px;
+  border-radius: 16px;
+}
+
+.collections-tags {
+  color: var(--gray);
+  list-style: none;
+  display: flex;
+  gap: 4px;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.collections-tags li {
+  padding: 4px 12px;
+  background: var(--cream);
+  border-radius: 9999px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.collections-product-body h2 {
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.collections-product-body p {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.collections-product-action {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 0 8px;
+}
+
+.collections-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 2px solid var(--gray);
+  border-radius: 12px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  transition: .1s;
+}
+
+.collections-btn-yellow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  background: var(--yellow);
+  color: var(--navy);
+  transition: .1s;
+}
+
+.collections-btn-outline:hover {
+  border: 2px solid var(--navy);
+}
+
+.collections-btn-yellow:hover {
+  background: var(--yellow-hover);
+}
+
+.everyday-trail .collections-link:hover {
+  color: var(--navy);
+}
+
+.everyday-trail-active {
+  color: var(--navy);
 }

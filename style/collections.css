@@ -363,3 +363,11 @@ body {
 .collections-btn-inquiry:hover {
   background: var(--gray);
 }
+
+.collections-trail .collections-link:hover {
+  color: var(--navy);
+}
+
+.collections-trail-active {
+  color: var(--navy);
+}
