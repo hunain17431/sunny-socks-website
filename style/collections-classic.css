@@ -25,3 +25,337 @@ body {
   background: var(--cream);
   color: var(--navy);
 }
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--navy-border);
+  height: 40px;
+  padding : 16px 32px; 
+}
+
+.nav-logo{
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links li a {
+  font-family: var(--font-display);
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--navy);
+}
+
+.nav-links li a.nav-active {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+}
+
+.nav-inquiry {
+  background-color: var(--navy);
+  color: var(--white);
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.nav-inquiry:hover {
+  background-color: var(--navy-dark);
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.nav-lang-toggle {
+  display: flex;
+  border: 1px solid var(--navy-border);
+  overflow: hidden;
+  border-radius: 100px;
+  padding: 1px;
+}
+
+.nav-lang-en {
+  font-size: 12px;
+  font-weight: 700;
+  width: 35px;
+  background-color: var(--yellow);
+  border-radius: 100px;
+  border: none;
+}
+
+.nav-lang-nl {
+  font-size: 12px;
+  width: 35px;
+  font-weight: 700;
+  border-radius: 100px;
+  color: var(--gray);
+  background-color: var(--white);
+  border: none;
+}
+
+/* Classic Everyday */
+
+.everyday-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+ 
+.everyday-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+ 
+ 
+.everyday-banner {
+  border-bottom: 1px solid var(--cream-dark);
+}
+ 
+.everyday-trail {
+  display: flex;
+  gap: 8px;
+  padding: 20px 0;
+  font-size: 14px;
+  color: var(--gray);
+}
+ 
+.everyday-link {
+  color: inherit;
+  text-decoration: none;
+}
+ 
+ 
+.everyday-image {
+  max-width: 580px;
+  margin-top: 40px;
+}
+ 
+.everyday-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+.everyday-image-main {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 24px;
+}
+ 
+.everyday-image-preview-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+ 
+.everyday-image-preview {
+  max-width: 80px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 2px transparent;
+}
+
+.everyday-image-preview.active{
+  border: 2px solid var(--navy-dark);
+}
+
+.everyday-image-preview:hover {
+  border: 2px dotted var(--navy-dark);
+}
+ 
+ 
+.everyday-info h1 {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+ 
+.everyday-desc {
+  color: var(--gray);
+}
+ 
+.everyday-tags {
+  display: flex;
+  gap: 4px;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+  color: var(--navy);
+}
+ 
+.everyday-tags li {
+  padding: 4px 12px;
+  background: var(--yellow);
+  border-radius: 9999px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.everyday-size-btns {
+  margin-top: 10px;
+}
+ 
+.everyday-size-btn {
+  padding: 10px 20px;
+  border: 2px solid var(--gray);
+  border-radius: 8px;
+  background: var(--cream);
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  transition: 0.1s;
+}
+
+.everyday-size-btn:hover {
+  border: 2px solid var(--navy);
+}
+ 
+.everyday-material {
+  margin: 30px 0;
+  padding: 15px;
+  background-color: var(--cream-dark);
+  border-radius: 12px;
+}
+
+.everyday-material span {
+  color: var(--gray);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+ 
+.everyday-material p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--gray);
+}
+ 
+ 
+.everyday-inquiry-btns {
+  display: flex;
+  gap: 12px;
+}
+ 
+.everyday-inquiry-btn,
+.everyday-inquiry-btn-outline {
+  flex: 1;
+  padding: 20px 24px;
+  border-radius: 12px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.1s;
+}
+ 
+.everyday-inquiry-btn {
+  border: 1px solid var(--white);
+  background: var(--navy);
+  color: var(--white);
+}
+
+.everyday-inquiry-btn:hover {
+  background: var(--navy-dark);
+}
+ 
+.everyday-inquiry-btn-outline {
+  border: 2px solid var(--navy);
+  background-color: var(--cream);
+  color: var(--navy);
+}
+ 
+.everyday-inquiry-btn-outline:hover {
+  background-color: var(--navy-dark);
+  color: var(--white);
+}
+
+.everyday-disclaimer {
+  font-size: 12px;
+  text-align: center;
+  color: var(--gray);
+}
+ 
+ 
+.everyday-custom-order {
+  background-color: var(--teal);
+}
+ 
+.everyday-custom-order .everyday-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 40px;
+}
+ 
+.everyday-custom-order h3 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: -10px;
+}
+
+.everyday-custom-order p {
+  color: var(--white);
+  font-size: 14px;
+}
+
+.everyday-custom-inquiry-btn {
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.1s;
+  border: 1px solid transparent;
+  background: var(--yellow);
+  color: var(--navy);
+}
+
+.everyday-custom-inquiry-btn:hover {
+  background-color: var(--yellow-hover);
+}
+
+.everyday-ymal {
+  background-color: var(--cream-dark);
+  padding: 48px 0 64px;
+}
+
+.everyday-ymal-title {
+  margin: 0 0 32px;
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
