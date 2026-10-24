@@ -152,7 +152,7 @@ body {
 /* HOME COLLECTION SECTION */
 
 .home-collection{
-  margin-top: 30px;
+  margin-top: 15px;
   padding: 40px 32px 0 50px;
 }
 
@@ -245,4 +245,159 @@ body {
     background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.7) 100%), url(/sunny-socks-website/images/home/classic-everyday.jpg);
     background-size: cover;
     background-position: center;
+}
+
+/* Home Products section */
+
+.home-product{
+  padding: 40px 32px 0 50px;
+}
+
+.home-product-label{
+  color: var(--teal);
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: -15px;
+}
+
+.home-product-header-div {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.home-product-title{
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.home-product-button{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy);
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+}
+
+.home-product-cards {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.home-product-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px 10px 20px;
+  border: 2px solid var(--yellow);
+  border-radius: 25px;
+  background: var(--white);
+  transition: 0.3s;
+}
+
+.home-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 5px var(--gray);
+}
+
+.home-product-image {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--cream-dark);
+  border-radius: 16px;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+  }
+}
+
+.home-product-image img:hover {
+  transform: scale(1.1);
+}
+
+.home-product-body {
+  flex: 1;
+  padding: 0 10px;
+
+  h3{
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  p{
+    font-size: 14px;
+    color: var(--gray);
+  }
+}
+
+.home-product-tags {
+  display: flex;
+  flex-direction: row;
+  color: var(--gray);
+  list-style: none;
+  gap: 4px;
+  padding: 0;
+
+  li {
+    padding: 4px 12px;
+    background: var(--cream);
+    border-radius: 9999px;
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.home-product-action {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 0 8px;
+}
+
+.home-product-btn-add {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  background: var(--yellow);
+  color: var(--navy);
+  text-decoration: none;
+  transition: 0.1s;
+
+  &:hover {
+    background: var(--yellow-hover);
+  }
+}
+
+.home-product-btn-view {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 12px 24px;
+  border: 2px solid var(--gray);
+  border-radius: 12px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  text-decoration: none;
+  transition: 0.1s;
+
+  &:hover {
+    border: 2px solid var(--navy);
+  }
 }
