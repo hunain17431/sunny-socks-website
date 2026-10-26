@@ -247,10 +247,12 @@ body {
     background-position: center;
 }
 
-/* Home Products section */
+/* Home Product section */
 
 .home-product{
   padding: 40px 32px 0 50px;
+  background-color: var(--cream-dark);
+  margin-top: 30px;
 }
 
 .home-product-label{
@@ -284,6 +286,7 @@ body {
   display: flex;
   gap: 10px;
   margin-top: 20px;
+  padding-bottom: 30px;
 }
 
 .home-product-card {
@@ -399,5 +402,113 @@ body {
 
   &:hover {
     border: 2px solid var(--navy);
+  }
+}
+
+/* Home About us Section */
+
+.home-about {
+  padding: 40px 32px 0 50px;
+  text-align: center;
+  background-color: var(--navy);
+}
+
+.home-about-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--yellow-hover);
+  margin-bottom: -30px;
+}
+
+.home-about-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--white);
+}
+
+.home-about-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.home-about-icon{
+  font-size: 30px;
+}
+
+.home-about-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 5px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--yellow); 
+    margin-bottom: 12px;
+  }
+
+  p{
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--lightgray);
+    line-height: 1.6;
+  }
+  
+  a{
+    color: var(--yellow);
+    text-decoration: underline;
+    text-decoration-color: var(--yellow-hover);
+    text-decoration-thickness: 0px;
+    text-underline-offset: 6px;
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+}
+
+/* Home About us Section */
+
+.home-sustainability {
+  padding: 40px 32px 0 50px;
+  background-color: var(--teal);
+
+  h3{
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+}
+
+.home-sustainability-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-top: -10px;
+
+  p {
+    font-size: 14px;
+    color : var(--white);
+    max-width: 600px;
+  }
+
+  button {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: var(--yellow); 
+    color : var(--navy);
+    text-decoration: none;
   }
 }
