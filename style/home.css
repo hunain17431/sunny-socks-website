@@ -525,7 +525,8 @@ body {
     font-family: var(--font-display);
     font-weight: 700;
     font-size: 14px;
-    padding: 5px 10px;
+    border: none;
+    padding: 5px 24px;
     border-radius: 12px;
     background: var(--yellow); 
     color : var(--navy);
@@ -567,7 +568,7 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 12px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .home-newsletter-form input {
