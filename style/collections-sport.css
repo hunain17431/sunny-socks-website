@@ -25,3 +25,136 @@ body {
   background: var(--cream);
   color: var(--navy);
 }
+
+/* SPORT PRO PAGE */
+
+.sport-pro-page {
+    background-color: var(--cream);
+    color: var(--navy);
+    font-family: var(--font-body);
+}
+
+.sport-pro-page .product-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+}
+
+.sport-pro-page .product-image img {
+    width: 100%;
+    height: 455px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.sport-pro-page .product-info {
+    padding: 8px 0;
+}
+
+.sport-pro-page .product-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.sport-pro-page .product-tags span {
+    background-color: var(--yellow);
+    color: var(--navy);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.sport-pro-page h1 {
+    font-family: var(--font-display);
+    font-size: 40px;
+    margin: 0 0 16px;
+}
+
+.sport-pro-page .description {
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 26px;
+}
+
+.sport-pro-page .sizes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.sport-pro-page .sizes button {
+    padding: 10px 16px;
+    border: 2px solid var(--cream-dark);
+    border-radius: 8px;
+    background-color: var(--cream);
+    color: var(--navy);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sport-pro-page .sizes button:hover {
+    border-color: var(--navy);
+    background-color: var(--cream-dark);
+}
+
+.sport-pro-page .material {
+    background-color: var(--cream-dark);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 24px 0;
+}
+
+.sport-pro-page .material h2 {
+    font-size: 16px;
+    margin: 0 0 8px;
+}
+
+.sport-pro-page .material p {
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.sport-pro-page .primary-button {
+    display: block;
+    padding: 15px 20px;
+    margin-top: 24px;
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.sport-pro-page .primary-button:hover {
+    background-color: var(--navy-dark);
+}
+
+.sport-pro-page .note {
+    color: var(--gray);
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 14px;
+}
+
+@media (max-width: 700px) {
+    .sport-pro-page .product-page {
+        grid-template-columns: 1fr;
+        padding: 24px 16px;
+        gap: 24px;
+    }
+
+    .sport-pro-page .product-image img {
+        height: auto;
+    }
+}
