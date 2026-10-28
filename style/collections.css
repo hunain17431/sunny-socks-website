@@ -182,6 +182,7 @@
     background: var(--yellow);
     color: var(--navy);
     transition: .1s;
+    text-decoration: none;
 }
 
 .collections-btn-outline {
@@ -254,6 +255,7 @@
     background: var(--navy);
     color: var(--white);
     transition: .1s;
+    text-decoration: none;
 }
 
 .collections-btn-inquiry:hover {
