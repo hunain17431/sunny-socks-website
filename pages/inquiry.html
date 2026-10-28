@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry</title>
+    <link rel="stylesheet" href="/sunny-socks-website/style/style.css">
+    <link rel="stylesheet" href="/sunny-socks-website/style/inquiry.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="/sunny-socks-website/images/home/sun-icon.svg" alt="sun icon">
+            <span><a href="/sunny-socks-website/index.html">SUNNY SOCKS</a></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/sunny-socks-website/index.html">Home</a></li>
+            <li><a href="/sunny-socks-website/pages/collections.html">Collections</a></li>
+            <li><a href="/sunny-socks-website/pages/about.html">About us</a></li>
+            <li><a href="/sunny-socks-website/pages/sustainability.html">Sustainability</a></li>
+            <li><a href="/sunny-socks-website/pages/contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">            
+            <div class="nav-lang-toggle">
+                <button class="nav-lang-en">EN</button>
+                <button class="nav-lang-nl">NL</button>
+            </div>
+            <a href="pages/inquiry.html" class="nav-inquiry">Inquiry</a>
+        </div>
+    </nav>
+    <section class="inquiry-hero-section">
+        <h3>PERSONAL SUPPORT</h3>
+        <h2>PRODUCT INQUIRY</h2>
+        <p>Tell us which Sunny Socks products you are interested in. We will get in touch about quantities, possibilities, and next steps.</p>
+    </section>
+    <section class="inquiry-section">
+        <div class="inquiry-section-left">
+            <div class="inquiry-products">
+                <h3>PRODUCTS IN INQUIRY</h3>
+                <div>
+                    <p>You have not added any products to your inquiry yet.</p>
+                    <a href="/sunny-socks-website/pages/collections.html">Browse Collections</a>
+                </div>
+            </div>
+            <div>
+                <form class="inquiry-section-form">
+                    <h3>CUSTOMER INFORMATION</h3>
+                    <div class="inquiry-row">
+                        <div>
+                            <label for="name">COMPANY NAME *</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div>
+                            <label for="contact">CONTACT PERSON *</label>
+                            <input type="text" id="contact" required>
+                        </div>
+                    </div>
+                    <div class="inquiry-row">
+                        <div>
+                            <label for="mail">EMAIL *</label>
+                            <input type="email" id="mail" required>
+                        </div>
+                        <div>
+                            <label for="phone">PHONE</label>
+                            <input type="tel" id="phone" required>
+                        </div>                        
+                    </div>
+
+                    <h3>ADDITIONAL NOTES</h3>
+                    <textarea id="textbox" placeholder="Tell us more about prefered quantities, timing, or any questions."></textarea>
+
+                    <div class="inquiry-checkbox">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">I agree to the Terms & Conditions and Privacy Policy.</label>
+                    </div>
+
+                    <button type="submit" class="inquiry-submit">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+        <div class="inquiry-section-right">
+            <div class="inquiry-company">
+                <h3>COMPANY INFORMATON</h3>
+                <p>Sunny Socks</p>
+                <ul>
+                    <li>Oudegracht 245</li>
+                    <li>3511 NJ Utrecht</li>
+                    <li>The Netherlands</li>
+                </ul>
+            </div>
+            <div class="inquiry-question">
+                <h3>HAVE A QUESTION?</h3>
+                <p>Need help choosing the right socks or have a question about your inquiry?</p>
+                <a href="/sunny-socks-website/pages/contact.html">Get in touch →</a>
+            </div>
+            <div class="inquiry-payments">
+                <h3>PAYMENTS METHODS</h3>
+                <div class="inquiry-payments-methods">
+                    <span>iDEAL</span>
+                    <span>Visa</span>
+                    <span>Mastercard</span>
+                    <span>PayPal</span>
+                    <span>Apple Pay</span>
+                    <span>Google Pay</span>
+                </div>
+                <p>Payment will be arranged after your inquiry is confirmed.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
