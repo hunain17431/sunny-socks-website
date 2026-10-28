@@ -1,23 +1,23 @@
 /* Nordic Knit */
 
-.everyday-container {
+.nordic-container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 32px;
 }
 
-.everyday-grid {
+.nordic-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 48px;
 }
 
 
-.everyday-banner {
+.nordic-banner {
     border-bottom: 1px solid var(--cream-dark);
 }
 
-.everyday-trail {
+.nordic-trail {
     display: flex;
     gap: 8px;
     padding: 20px 0;
@@ -25,36 +25,36 @@
     color: var(--gray);
 }
 
-.collections-link {
+.nordic-link {
     color: inherit;
     text-decoration: none;
 }
 
 
-.everyday-image {
+.nordic-image {
     max-width: 580px;
     margin-top: 40px;
 }
 
-.everyday-image img {
+.nordic-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.everyday-image-main {
+.nordic-image-main {
     aspect-ratio: 1;
     overflow: hidden;
     border-radius: 24px;
 }
 
-.everyday-image-preview-container {
+.nordic-image-preview-container {
     display: flex;
     gap: 10px;
     margin-top: 15px;
 }
 
-.everyday-image-preview {
+.nordic-image-preview {
     max-width: 80px;
     aspect-ratio: 1;
     overflow: hidden;
@@ -62,27 +62,27 @@
     border: 2px solid transparent;
 }
 
-.everyday-image-preview.active {
+.nordic-image-preview.active {
     border: 2px solid var(--navy-dark);
 }
 
-.everyday-image-preview:hover {
+.nordic-image-preview:hover {
     border: 2px dotted var(--navy-dark);
 }
 
 
-.everyday-info h1 {
+.nordic-info h1 {
     font-family: var(--font-display);
     font-size: 36px;
     font-weight: 900;
     text-transform: uppercase;
 }
 
-.everyday-desc {
+.nordic-desc {
     color: var(--gray);
 }
 
-.everyday-tags {
+.nordic-tags {
     display: flex;
     gap: 4px;
     margin-top: 40px;
@@ -91,7 +91,7 @@
     color: var(--navy);
 }
 
-.everyday-tags li {
+.nordic-tags li {
     padding: 4px 12px;
     background: var(--yellow);
     border-radius: 9999px;
@@ -100,11 +100,19 @@
     font-weight: 600;
 }
 
-.everyday-size-btns {
+.nordic-size {
+    color: var(--gray);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.nordic-size-btns {
     margin-top: 10px;
 }
 
-.everyday-size-btn {
+.nordic-size-btn {
     padding: 10px 20px;
     border: 2px solid var(--lightgray);
     border-radius: 8px;
@@ -116,18 +124,18 @@
     transition: 0.1s;
 }
 
-.everyday-size-btn:hover {
+.nordic-size-btn:hover {
     border: 2px solid var(--navy);
 }
 
-.everyday-material {
+.nordic-material {
     margin: 30px 0;
     padding: 15px;
     background-color: var(--cream-dark);
     border-radius: 12px;
 }
 
-.everyday-material span {
+.nordic-material span {
     color: var(--gray);
     font-size: 12px;
     text-transform: uppercase;
@@ -135,7 +143,7 @@
     font-weight: 700;
 }
 
-.everyday-material p {
+.nordic-material p {
     margin-bottom: 10px;
     font-size: 14px;
     letter-spacing: 1px;
@@ -143,13 +151,13 @@
 }
 
 
-.everyday-inquiry-btns {
+.nordic-inquiry-btns {
     display: flex;
     gap: 12px;
 }
 
-.everyday-inquiry-btn,
-.everyday-inquiry-btn-outline {
+.nordic-inquiry-btn,
+.nordic-inquiry-btn-outline {
     flex: 1;
     padding: 20px 24px;
     border-radius: 12px;
@@ -159,17 +167,17 @@
     transition: 0.1s;
 }
 
-.everyday-inquiry-btn {
+.nordic-inquiry-btn {
     border: 1px solid var(--white);
     background: var(--navy);
     color: var(--white);
 }
 
-.everyday-inquiry-btn:hover {
+.nordic-inquiry-btn:hover {
     background: var(--navy-dark);
 }
 
-.everyday-inquiry-btn-outline {
+.nordic-inquiry-btn-outline {
     border: 2px solid var(--navy);
     background-color: var(--cream);
     color: var(--navy);
@@ -177,23 +185,23 @@
     justify-content: center;
 }
 
-.everyday-inquiry-btn-outline:hover {
+.nordic-inquiry-btn-outline:hover {
     background-color: var(--navy-dark);
     color: var(--white);
 }
 
-.everyday-disclaimer {
+.nordic-disclaimer {
     font-size: 12px;
     text-align: center;
     color: var(--gray);
 }
 
 
-.everyday-custom-order {
+.nordic-custom-order {
     background-color: var(--teal);
 }
 
-.everyday-custom-order .everyday-container {
+.nordic-custom-order .nordic-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -201,7 +209,7 @@
     margin-top: 40px;
 }
 
-.everyday-custom-order h3 {
+.nordic-custom-order h3 {
     font-family: var(--font-display);
     font-size: 24px;
     font-weight: 900;
@@ -210,12 +218,12 @@
     margin-bottom: -10px;
 }
 
-.everyday-custom-order p {
+.nordic-custom-order p {
     color: var(--white);
     font-size: 14px;
 }
 
-.everyday-custom-inquiry-btn {
+.nordic-custom-inquiry-btn {
     padding: 15px 30px;
     border-radius: 8px;
     font-family: var(--font-display);
@@ -227,16 +235,16 @@
     color: var(--navy);
 }
 
-.everyday-custom-inquiry-btn:hover {
+.nordic-custom-inquiry-btn:hover {
     background-color: var(--yellow-hover);
 }
 
-.everyday-ymal {
+.nordic-ymal {
     background-color: var(--cream-dark);
     padding: 48px 0 64px;
 }
 
-.everyday-ymal-title {
+.nordic-ymal-title {
     margin: 0 0 32px;
     font-family: var(--font-display);
     font-size: 24px;
@@ -244,13 +252,13 @@
     text-transform: uppercase;
 }
 
-.collections-product-grid {
+.nordic-product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-.collections-product-card {
+.nordic-product-card {
     display: flex;
     flex-direction: column;
     padding: 10px 10px 20px;
@@ -260,36 +268,36 @@
     transition: .3s;
 }
 
-.collections-product-card:hover {
+.nordic-product-card:hover {
     transform: translateY(-5px);
     box-shadow: 5px 5px 5px var(--gray);
 }
 
-.collections-product-image {
+.nordic-product-image {
     aspect-ratio: 1 / 1;
     overflow: hidden;
     background: var(--cream-dark);
     border-radius: 16px;
 }
 
-.collections-product-image img {
+.nordic-product-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: .3s;
 }
 
-.collections-product-image img:hover {
+.nordic-product-image img:hover {
     transform: scale(1.1);
 }
 
-.collections-product-body {
+.nordic-product-body {
     flex: 1;
     padding: 0 10px;
     border-radius: 16px;
 }
 
-.collections-tags {
+.nordic-card-tags {
     color: var(--gray);
     list-style: none;
     display: flex;
@@ -298,7 +306,7 @@
     padding: 0;
 }
 
-.collections-tags li {
+.nordic-card-tags li {
     padding: 4px 12px;
     background: var(--cream);
     border-radius: 9999px;
@@ -307,19 +315,19 @@
     font-weight: 600;
 }
 
-.collections-product-body h2 {
+.nordic-product-body h2 {
     margin-bottom: 8px;
     font-family: var(--font-display);
     font-size: 18px;
     font-weight: 700;
 }
 
-.collections-product-body p {
+.nordic-product-body p {
     font-size: 14px;
     color: var(--gray);
 }
 
-.collections-product-action {
+.nordic-product-action {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
@@ -327,7 +335,7 @@
     padding: 0 8px;
 }
 
-.collections-btn-outline {
+.nordic-btn-outline {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -341,7 +349,7 @@
     transition: .1s;
 }
 
-.collections-btn-yellow {
+.nordic-btn-yellow {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -356,62 +364,62 @@
     transition: .1s;
 }
 
-.collections-btn-outline:hover {
+.nordic-btn-outline:hover {
     border: 2px solid var(--navy);
 }
 
-.collections-btn-yellow:hover {
+.nordic-btn-yellow:hover {
     background: var(--yellow-hover);
 }
 
-.everyday-trail .collections-link:hover {
+.nordic-trail .nordic-link:hover {
     color: var(--navy);
 }
 
-.everyday-trail-active {
+.nordic-trail-active {
     color: var(--navy);
 }
 
 @media (max-width: 900px) {
-    .everyday-grid {
+    .nordic-grid {
         grid-template-columns: 1fr;
         gap: 25px;
     }
 
-    .everyday-image {
+    .nordic-image {
         max-width: 100%;
         margin-top: 20px;
     }
 
-    .everyday-tags {
+    .nordic-tags {
         margin-top: 0;
     }
 
-    .collections-product-grid {
+    .nordic-product-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
-    .everyday-container {
+    .nordic-container {
         padding: 0 15px;
     }
 
-    .everyday-info h1 {
+    .nordic-info h1 {
         font-size: 28px;
     }
 
-    .everyday-inquiry-btns {
+    .nordic-inquiry-btns {
         flex-direction: column;
     }
 
-    .everyday-custom-order .everyday-container {
+    .nordic-custom-order .nordic-container {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
     }
 
-    .collections-product-grid {
+    .nordic-product-grid {
         grid-template-columns: 1fr;
     }
 }
