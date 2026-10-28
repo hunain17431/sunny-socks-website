@@ -140,6 +140,7 @@ body {
   margin-bottom: 10px;
   border-radius: 24px;
   padding: 20px;
+  padding-bottom: 30px;
   width: 450px;
 
   p:first-child {
@@ -157,20 +158,18 @@ body {
     line-height: 20px;
     margin-left: 0;
     padding: 0;
+    margin-bottom: 30px;
   }
 
-  button {
+  a {
     background: var(--yellow);
     font-weight : 700;
     font-size : 14px; 
     padding: 14px 28px;
     border-radius: 12px;
     border: none;
-
-    a{
-      text-decoration : none; 
-      color : var(--navy);
-    }
+    text-decoration : none; 
+    color : var(--navy);
 
     &:hover {
       background-color: var(--yellow-hover);
