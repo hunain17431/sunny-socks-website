@@ -28,7 +28,7 @@ body {
 
 /* Hero section */
 .inquiry-hero-section {
-  padding: 40px 32px 0 50px;
+  padding: 40px 32px 0 100px;
 
 
   h3 {
@@ -59,7 +59,7 @@ body {
 /* Content right section*/
 
 .inquiry-section {
-  padding: 40px 32px 30px 50px;
+  padding: 20px 32px 30px 100px;
   display: flex;
   flex-direction: row;
   gap: 40px;
@@ -204,7 +204,7 @@ body {
       font-weight: 400; 
       font-size: 14px;
       color : var(--gray); 
-      margin-bottom: 16px;
+      margin-bottom: 30px;
     }
 
     a{
@@ -214,7 +214,6 @@ body {
         font-size: 14px; 
         padding: 14px 28px; 
         border-radius: 12px; 
-        margin-top: 1000px;
         border: none;
         cursor: pointer;
         text-decoration: none;
