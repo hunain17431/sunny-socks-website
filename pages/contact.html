@@ -72,31 +72,31 @@
     <section class="contact-form-section">
         <div class="contact-form-left">
             <h3>SEND A MESSAGE</h3>
-            <form class="contact-form">
+            <form class="contact-form" action="../pages/functionality/contact.php" method="post">
                 <div class="contact-form-row">
                     <div>
                         <label for="name">NAME *</label>
-                        <input type="text" id="name" placeholder="Your name" required>
+                        <input type="text" id="name" name="contact-name" placeholder="Your name" required>
                     </div>
                     <div>
                         <label for="mail">EMAIL *</label>
-                        <input type="email" id="mail" placeholder="your@email.com" required>
+                        <input type="email" id="mail"  name="contact-mail" placeholder="your@email.com" required>
                     </div>
                 </div>
                 <label for="company">COMPANY *</label>
-                <input type="text" id="company" placeholder="Company name" required>
+                <input type="text" id="company" name="contact-company" placeholder="Company name" required>
 
                 <label for="subject">SUBJECT</label>
-                <select id="subject">
+                <select id="subject" name="contact-select">
                     <option value="">Select a topic...</option>
-                    <option value="P">Product Inquiry</option>
-                    <option value="B">Buisness / Customer Order</option>
-                    <option value="M">Press and Media</option>
+                    <option value="Product">Product Inquiry</option>
+                    <option value="Buisness">Buisness / Customer Order</option>
+                    <option value="Media">Press and Media</option>
                     <option value="O">Other</option>
                 </select>
 
                 <label for="message">MESSAGE</label>
-                <textarea id="message" placeholder="Tell us how we can help..." rows="6" required></textarea>
+                <textarea id="message" name="contact-message" placeholder="Tell us how we can help..." rows="6" required></textarea>
 
                 <button type="submit">Send Message</button>
             </form>
