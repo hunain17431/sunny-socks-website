@@ -234,25 +234,25 @@ body {
 }
 
 #home-collection-card-1 {
-    background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.7) 100%), url(/sunny-socks-website/images/home/classic-everyday.jpg);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.7) 100%), url(../images/home/classic-everyday.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #home-collection-card-2 {
-    background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.7) 100%), url(/sunny-socks-website/images/home/nordic-knit.jpg);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.7) 100%), url(../images/home/nordic-knit.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #home-collection-card-3 {
-    background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.7) 100%), url(/sunny-socks-website/images/home/tropical-vibes.jpg);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.7) 100%), url(../images/home/tropical-vibes.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #home-collection-card-4 {
-    background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.7) 100%), url(/sunny-socks-website/images/home/custom.jpeg);
+    background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.7) 100%), url(../images/home/custom.jpeg);
     background-size: cover;
     background-position: center;
 }
