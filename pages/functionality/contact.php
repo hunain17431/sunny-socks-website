@@ -98,7 +98,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h3>MESSAGE SENT</h3>
             <?php if(count($errors) > 0) { ?>
                 <div class="contact-error">
-                    <h3>Something went wrong!</h3>
+                    <h3>Contact form not sent!</h3>
+                    <p>Please fix the following to continue:</p>
                     <ul>
                         <?php foreach ($errors as $error){ ?>
                             <li><?= $error ?></li>

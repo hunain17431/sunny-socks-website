@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inquiry</title>
+    <title>Inquiry | Sunny Socks</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/inquiry.css">
     <link rel="shortcut icon" href="../images/home/sun-icon.svg" type="image/x-icon">
@@ -26,7 +26,7 @@
                 <button class="nav-lang-en">EN</button>
                 <button class="nav-lang-nl">NL</button>
             </div>
-            <a href="pages/inquiry.html" class="nav-inquiry">Inquiry</a>
+            <a href="../pages/inquiry.html" class="nav-inquiry">Inquiry</a>
         </div>
     </nav>
     <section class="inquiry-hero-section">
@@ -36,43 +36,49 @@
     </section>
     <section class="inquiry-section">
         <div class="inquiry-section-left">
-            <div class="inquiry-products">
-                <h3>PRODUCTS IN INQUIRY</h3>
-                <div>
-                    <p>You have not added any products to your inquiry yet.</p>
-                    <a href="../pages/collections.html">Browse Collections</a>
-                </div>
-            </div>
             <div>
-                <form class="inquiry-section-form">
+                <form class="inquiry-section-form" action="functionality/inquiry.php" method="post">
+                    <div class="inquiry-products">
+                        <h3>PRODUCTS IN INQUIRY</h3>
+                        <p>Select the products you'd like to inquire about</p>
+                        <div class="inquiry-product-list">
+                            <label><input type="checkbox" name="products[]" value="classic-everyday"> Classic Everyday</label>
+                            <label><input type="checkbox" name="products[]" value="nordic-knit"> Nordic Knit</label>
+                            <label><input type="checkbox" name="products[]" value="tropical-vibes"> Tropical Vibes</label>
+                            <label><input type="checkbox" name="products[]" value="sport-pro"> Sport Pro</label>
+                            <label><input type="checkbox" name="products[]" value="stripe-co"> Stripe & Co</label>
+                            <label><input type="checkbox" name="products[]" value="bold-geo"> Bold Geo</label>
+                        </div>
+                    </div>
+
                     <h3>CUSTOMER INFORMATION</h3>
                     <div class="inquiry-row">
                         <div>
-                            <label for="name">COMPANY NAME *</label>
-                            <input type="text" id="name" required>
+                            <label class="customer-label" for="name">COMPANY NAME *</label>
+                            <input class="customer-input" type="text" id="name" name="customer-name">
                         </div>
                         <div>
-                            <label for="contact">CONTACT PERSON *</label>
-                            <input type="text" id="contact" required>
+                            <label class="customer-label" for="contact">CONTACT PERSON *</label>
+                            <input class="customer-input" type="text" id="contact" name="contact-person">
                         </div>
                     </div>
                     <div class="inquiry-row">
                         <div>
-                            <label for="mail">EMAIL *</label>
-                            <input type="email" id="mail" required>
+                            <label class="customer-label" for="mail">EMAIL *</label>
+                            <input class="customer-input" type="email" id="mail" name="contact-email">
                         </div>
                         <div>
-                            <label for="phone">PHONE</label>
-                            <input type="tel" id="phone" required>
+                            <label class="customer-label" for="phone">PHONE</label>
+                            <input class="customer-input" type="tel" id="phone" name="contact-phone">
                         </div>                        
                     </div>
 
-                    <h3>ADDITIONAL NOTES</h3>
-                    <textarea id="textbox" placeholder="Tell us more about prefered quantities, timing, or any questions."></textarea>
+                    <h3>SIZES, QUANTITIES & NOTES *</h3>
+                    <textarea id="textbox" name="contact-notes" placeholder="Please include your preferred sizes and quantities for each product (e.g. Sport Pro: 50 pairs in M, 30 pairs in L). Any other questions or details are welcome here."></textarea>
 
                     <div class="inquiry-checkbox">
-                        <input type="checkbox" id="terms">
-                        <label for="terms">I agree to the Terms & Conditions and Privacy Policy.</label>
+                        <input class="customer-input" type="checkbox" id="terms" name="terms">
+                        <label class="customer-label" for="terms" id="checkbox" name="contact-checkbox">I agree to the Terms & Conditions and Privacy Policy.</label>
                     </div>
 
                     <button type="submit" class="inquiry-submit">Submit Inquiry</button>
